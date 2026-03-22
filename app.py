@@ -74,8 +74,7 @@ section = st.sidebar.radio(
         "Baseline Logistic Model",
         "Enhanced Logistic Model",
         "Boosted Tree Benchmark",
-        "Model Comparison",
-        "Files Available"
+        "Model Comparison"
     ]
 )
 
@@ -129,8 +128,13 @@ if section == "Overview":
             "The enhanced logistic model and boosted tree benchmark performed very similarly, "
             "suggesting that the logistic model provides a strong balance between interpretability and predictive power."
         )
+
     else:
         st.warning("Metrics summary JSON not found.")
+
+    if METRICS_TXT.exists():
+        st.markdown("### Metrics Summary")
+        st.code(METRICS_TXT.read_text(encoding="utf-8"))
 
 # ------------------------------------------------------------
 # Baseline Logistic Model
@@ -275,3 +279,8 @@ elif section == "Model Comparison":
         "This makes the enhanced logistic model especially attractive because it is easier to explain and interpret."
     )
 
+# ------------------------------------------------------------
+# Footer
+# ------------------------------------------------------------
+st.markdown("---")
+st.caption("Built with Streamlit for the XN capstone dashboard.")
