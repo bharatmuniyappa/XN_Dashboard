@@ -278,7 +278,7 @@ elif section == "Model Comparison":
 # ------------------------------------------------------------
 # Files Available
 # ------------------------------------------------------------
-elif section == "Files Available":
+elif section == "Summary":
     st.subheader("XN Project")
 
     if METRICS_TXT.exists():
