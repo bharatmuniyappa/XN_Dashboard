@@ -275,18 +275,3 @@ elif section == "Model Comparison":
         "This makes the enhanced logistic model especially attractive because it is easier to explain and interpret."
     )
 
-# ------------------------------------------------------------
-# Files Available
-# ------------------------------------------------------------
-elif section == "Summary":
-    st.subheader("XN Project")
-
-    if METRICS_TXT.exists():
-        st.markdown("**Metrics Summary**")
-        st.code(METRICS_TXT.read_text(encoding="utf-8"))
-
-# ------------------------------------------------------------
-# Footer
-# ------------------------------------------------------------
-st.markdown("---")
-st.caption("Built with Streamlit for the XN capstone dashboard.")
