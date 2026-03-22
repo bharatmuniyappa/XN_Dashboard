@@ -279,23 +279,7 @@ elif section == "Model Comparison":
 # Files Available
 # ------------------------------------------------------------
 elif section == "Files Available":
-    st.subheader("Available Files in module11_output")
-
-    st.markdown("**Figures folder**")
-    if FIG_DIR.exists():
-        figure_files = sorted([p.name for p in FIG_DIR.glob("*.png")])
-        for f in figure_files:
-            st.write("-", f)
-    else:
-        st.write("Figures folder not found.")
-
-    st.markdown("**Tables folder**")
-    if TAB_DIR.exists():
-        table_files = sorted([p.name for p in TAB_DIR.glob("*.csv")])
-        for f in table_files:
-            st.write("-", f)
-    else:
-        st.write("Tables folder not found.")
+    st.subheader("XN Project")
 
     if METRICS_TXT.exists():
         st.markdown("**Metrics Summary**")
