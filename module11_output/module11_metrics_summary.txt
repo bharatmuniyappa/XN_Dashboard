@@ -1,0 +1,18 @@
+MODULE 11 METRICS SUMMARY
+=========================
+Outcome: ER_ANY_Y2
+Outcome prevalence: 0.1300
+Modeling sample size: 49557
+
+Baseline Logistic
+ROC-AUC: 0.6285
+PR-AUC : 0.1996
+
+Enhanced Logistic (+ Prior-Year Spending)
+ROC-AUC: 0.6688
+PR-AUC : 0.2311
+
+Boosted Tree Benchmark
+ROC-AUC: 0.6689
+PR-AUC : 0.2345
+Brier  : 0.1079

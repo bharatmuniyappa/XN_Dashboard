@@ -1,0 +1,18 @@
+{
+  "outcome": "ER_ANY_Y2",
+  "outcome_prevalence": 0.12997154791452267,
+  "n_modeling": 49557,
+  "baseline_logistic": {
+    "roc_auc": 0.6284993201120086,
+    "pr_auc": 0.1996404434077614
+  },
+  "enhanced_logistic": {
+    "roc_auc": 0.6688496640892382,
+    "pr_auc": 0.23113430810924962
+  },
+  "boosted_tree": {
+    "roc_auc": 0.668861936643658,
+    "pr_auc": 0.23445766645672972,
+    "brier": 0.10792699100095846
+  }
+}
